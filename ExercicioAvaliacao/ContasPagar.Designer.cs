@@ -34,8 +34,8 @@
             this.btnDeletar = new System.Windows.Forms.Button();
             this.btnAlterar = new System.Windows.Forms.Button();
             this.btnInserir = new System.Windows.Forms.Button();
-            this.dtp = new System.Windows.Forms.DateTimePicker();
-            this.txtId = new System.Windows.Forms.TextBox();
+            this.dtpdataVencimento = new System.Windows.Forms.DateTimePicker();
+            this.txtIdContasPagar = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -106,20 +106,20 @@
             this.btnInserir.Text = "INSERIR";
             this.btnInserir.UseVisualStyleBackColor = true;
             // 
-            // dtp
+            // dtpdataVencimento
             // 
-            this.dtp.Location = new System.Drawing.Point(504, 42);
-            this.dtp.Name = "dtp";
-            this.dtp.Size = new System.Drawing.Size(278, 20);
-            this.dtp.TabIndex = 21;
+            this.dtpdataVencimento.Location = new System.Drawing.Point(504, 42);
+            this.dtpdataVencimento.Name = "dtpdataVencimento";
+            this.dtpdataVencimento.Size = new System.Drawing.Size(278, 20);
+            this.dtpdataVencimento.TabIndex = 21;
             // 
-            // txtId
+            // txtIdContasPagar
             // 
-            this.txtId.Enabled = false;
-            this.txtId.Location = new System.Drawing.Point(131, 41);
-            this.txtId.Name = "txtId";
-            this.txtId.Size = new System.Drawing.Size(56, 20);
-            this.txtId.TabIndex = 20;
+            this.txtIdContasPagar.Enabled = false;
+            this.txtIdContasPagar.Location = new System.Drawing.Point(131, 41);
+            this.txtIdContasPagar.Name = "txtIdContasPagar";
+            this.txtIdContasPagar.Size = new System.Drawing.Size(56, 20);
+            this.txtIdContasPagar.TabIndex = 20;
             // 
             // label3
             // 
@@ -211,8 +211,8 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.txtDescricao);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.dtp);
-            this.Controls.Add(this.txtId);
+            this.Controls.Add(this.dtpdataVencimento);
+            this.Controls.Add(this.txtIdContasPagar);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -232,8 +232,8 @@
         private System.Windows.Forms.Button btnDeletar;
         private System.Windows.Forms.Button btnAlterar;
         private System.Windows.Forms.Button btnInserir;
-        private System.Windows.Forms.DateTimePicker dtp;
-        private System.Windows.Forms.TextBox txtId;
+        private System.Windows.Forms.DateTimePicker dtpdataVencimento;
+        private System.Windows.Forms.TextBox txtIdContasPagar;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;

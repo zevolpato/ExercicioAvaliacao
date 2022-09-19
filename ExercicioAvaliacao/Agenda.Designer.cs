@@ -31,8 +31,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.txtIdAgenda = new System.Windows.Forms.TextBox();
+            this.dtpData = new System.Windows.Forms.DateTimePicker();
             this.rtbDescricao = new System.Windows.Forms.RichTextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.cmbHora = new System.Windows.Forms.ComboBox();
@@ -76,21 +76,21 @@
             this.label3.TabIndex = 2;
             this.label3.Text = "Descrição";
             // 
-            // textBox1
+            // txtIdAgenda
             // 
-            this.textBox1.Enabled = false;
-            this.textBox1.Location = new System.Drawing.Point(117, 42);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(56, 20);
-            this.textBox1.TabIndex = 3;
+            this.txtIdAgenda.Enabled = false;
+            this.txtIdAgenda.Location = new System.Drawing.Point(117, 42);
+            this.txtIdAgenda.Name = "txtIdAgenda";
+            this.txtIdAgenda.Size = new System.Drawing.Size(56, 20);
+            this.txtIdAgenda.TabIndex = 3;
             // 
-            // dateTimePicker1
+            // dtpData
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(486, 89);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(262, 20);
-            this.dateTimePicker1.TabIndex = 4;
-            this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
+            this.dtpData.Location = new System.Drawing.Point(486, 89);
+            this.dtpData.Name = "dtpData";
+            this.dtpData.Size = new System.Drawing.Size(262, 20);
+            this.dtpData.TabIndex = 4;
+            this.dtpData.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
             // 
             // rtbDescricao
             // 
@@ -213,8 +213,8 @@
             this.Controls.Add(this.cmbHora);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.rtbDescricao);
-            this.Controls.Add(this.dateTimePicker1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.dtpData);
+            this.Controls.Add(this.txtIdAgenda);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -233,8 +233,8 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.TextBox txtIdAgenda;
+        private System.Windows.Forms.DateTimePicker dtpData;
         private System.Windows.Forms.RichTextBox rtbDescricao;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.ComboBox cmbHora;

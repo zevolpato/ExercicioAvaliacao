@@ -32,8 +32,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.txtIdTelefone = new System.Windows.Forms.TextBox();
             this.cmbPesquisarNome = new System.Windows.Forms.ComboBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.dgwTelefones = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dgwTelefones)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -70,27 +70,27 @@
             this.cmbPesquisarNome.Size = new System.Drawing.Size(310, 21);
             this.cmbPesquisarNome.TabIndex = 3;
             // 
-            // dataGridView1
+            // dgwTelefones
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(65, 108);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(373, 145);
-            this.dataGridView1.TabIndex = 4;
+            this.dgwTelefones.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgwTelefones.Location = new System.Drawing.Point(65, 108);
+            this.dgwTelefones.Name = "dgwTelefones";
+            this.dgwTelefones.Size = new System.Drawing.Size(373, 145);
+            this.dgwTelefones.TabIndex = 4;
             // 
             // PesquisaTelefones
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(501, 338);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dgwTelefones);
             this.Controls.Add(this.cmbPesquisarNome);
             this.Controls.Add(this.txtIdTelefone);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "PesquisaTelefones";
             this.Text = "PesquisaTelefones";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgwTelefones)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -102,6 +102,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtIdTelefone;
         private System.Windows.Forms.ComboBox cmbPesquisarNome;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgwTelefones;
     }
 }

@@ -19,13 +19,7 @@ namespace ExercicioAvaliacao
 
         private void agendaToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            //Agenda agenda = new Agenda();
-            //agenda.MdiParent = this;
-            //agenda.Show();
-            
-          Contatos contato = new Contatos();
-            contato.MdiParent = this;
-            contato.Show();
+           
 
         }
 
@@ -71,6 +65,18 @@ namespace ExercicioAvaliacao
             ControleContas controleContas = new ControleContas();
             controleContas.MdiParent = this;
             controleContas.Show();
+        }
+
+        private void contatosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void cadastrarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Contatos contato = new Contatos();
+            contato.MdiParent = this;
+            contato.Show();
         }
     }
 }

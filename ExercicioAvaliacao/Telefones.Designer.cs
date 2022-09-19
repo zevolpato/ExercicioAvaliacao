@@ -42,9 +42,9 @@
             this.btnAlterar = new System.Windows.Forms.Button();
             this.btnDeletar = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgwTelefones = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgwTelefones)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -88,9 +88,9 @@
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(52, 28);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(56, 13);
+            this.label5.Size = new System.Drawing.Size(18, 13);
             this.label5.TabIndex = 4;
-            this.label5.Text = "IDtelefone";
+            this.label5.Text = "ID";
             // 
             // txtIdTelefone
             // 
@@ -166,20 +166,20 @@
             this.panel1.Size = new System.Drawing.Size(391, 47);
             this.panel1.TabIndex = 12;
             // 
-            // dataGridView1
+            // dgwTelefones
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(32, 257);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(391, 150);
-            this.dataGridView1.TabIndex = 13;
+            this.dgwTelefones.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgwTelefones.Location = new System.Drawing.Point(32, 257);
+            this.dgwTelefones.Name = "dgwTelefones";
+            this.dgwTelefones.Size = new System.Drawing.Size(391, 150);
+            this.dgwTelefones.TabIndex = 13;
             // 
             // Telefones
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(473, 450);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dgwTelefones);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.cmbOperadora);
             this.Controls.Add(this.txtNumero);
@@ -195,7 +195,7 @@
             this.Text = "Telefones";
             this.Load += new System.EventHandler(this.Telefones_Load);
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgwTelefones)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -217,6 +217,6 @@
         private System.Windows.Forms.Button btnAlterar;
         private System.Windows.Forms.Button btnDeletar;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgwTelefones;
     }
 }
