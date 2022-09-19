@@ -45,6 +45,32 @@ namespace ExercicioAvaliacao
             pesquisaTelefone.Show();
         }
 
-       
+        private void tarefasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Agenda agenda = new Agenda();
+            agenda.MdiParent = this;
+            agenda.Show();
+        }
+
+        private void contasAPagarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ContasPagar contasPagar = new ContasPagar();
+            contasPagar.MdiParent = this;
+            contasPagar.Show();
+        }
+
+        private void contasAReceberToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ContasReceber contasReceber = new ContasReceber();  
+            contasReceber.MdiParent = this;    
+            contasReceber.Show();
+        }
+
+        private void contasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ControleContas controleContas = new ControleContas();
+            controleContas.MdiParent = this;
+            controleContas.Show();
+        }
     }
 }

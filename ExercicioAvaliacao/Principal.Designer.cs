@@ -35,6 +35,7 @@
             this.controleContasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.contasAPagarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.contasAReceberToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.contasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.calculadoraToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pesquisarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.telefoneToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -70,7 +71,7 @@
             // agendaToolStripMenuItem
             // 
             this.agendaToolStripMenuItem.Name = "agendaToolStripMenuItem";
-            this.agendaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.agendaToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
             this.agendaToolStripMenuItem.Text = "Contatos";
             this.agendaToolStripMenuItem.Click += new System.EventHandler(this.agendaToolStripMenuItem_Click);
             // 
@@ -79,10 +80,12 @@
             this.tarefasToolStripMenuItem.Name = "tarefasToolStripMenuItem";
             this.tarefasToolStripMenuItem.Size = new System.Drawing.Size(60, 20);
             this.tarefasToolStripMenuItem.Text = "Agenda";
+            this.tarefasToolStripMenuItem.Click += new System.EventHandler(this.tarefasToolStripMenuItem_Click);
             // 
             // controleContasToolStripMenuItem
             // 
             this.controleContasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.contasToolStripMenuItem,
             this.contasAPagarToolStripMenuItem,
             this.contasAReceberToolStripMenuItem});
             this.controleContasToolStripMenuItem.Name = "controleContasToolStripMenuItem";
@@ -92,14 +95,23 @@
             // contasAPagarToolStripMenuItem
             // 
             this.contasAPagarToolStripMenuItem.Name = "contasAPagarToolStripMenuItem";
-            this.contasAPagarToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
+            this.contasAPagarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.contasAPagarToolStripMenuItem.Text = "Contas a pagar";
+            this.contasAPagarToolStripMenuItem.Click += new System.EventHandler(this.contasAPagarToolStripMenuItem_Click);
             // 
             // contasAReceberToolStripMenuItem
             // 
             this.contasAReceberToolStripMenuItem.Name = "contasAReceberToolStripMenuItem";
-            this.contasAReceberToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
+            this.contasAReceberToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.contasAReceberToolStripMenuItem.Text = "Contas a receber";
+            this.contasAReceberToolStripMenuItem.Click += new System.EventHandler(this.contasAReceberToolStripMenuItem_Click);
+            // 
+            // contasToolStripMenuItem
+            // 
+            this.contasToolStripMenuItem.Name = "contasToolStripMenuItem";
+            this.contasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.contasToolStripMenuItem.Text = "Contas";
+            this.contasToolStripMenuItem.Click += new System.EventHandler(this.contasToolStripMenuItem_Click);
             // 
             // calculadoraToolStripMenuItem
             // 
@@ -118,7 +130,7 @@
             // telefoneToolStripMenuItem
             // 
             this.telefoneToolStripMenuItem.Name = "telefoneToolStripMenuItem";
-            this.telefoneToolStripMenuItem.Size = new System.Drawing.Size(119, 22);
+            this.telefoneToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.telefoneToolStripMenuItem.Text = "Telefone";
             this.telefoneToolStripMenuItem.Click += new System.EventHandler(this.telefoneToolStripMenuItem_Click_1);
             // 
@@ -165,5 +177,6 @@
         private System.Windows.Forms.ToolStripMenuItem ajudaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem telefoneToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem sairToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem contasToolStripMenuItem;
     }
 }

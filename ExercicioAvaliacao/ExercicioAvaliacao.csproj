@@ -52,6 +52,18 @@
     <Compile Include="Agenda.Designer.cs">
       <DependentUpon>Agenda.cs</DependentUpon>
     </Compile>
+    <Compile Include="ContasPagar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ContasPagar.Designer.cs">
+      <DependentUpon>ContasPagar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ContasReceber.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ContasReceber.Designer.cs">
+      <DependentUpon>ContasReceber.cs</DependentUpon>
+    </Compile>
     <Compile Include="Contatos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -90,8 +102,20 @@
     <Compile Include="Telefones.Designer.cs">
       <DependentUpon>Telefones.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Agenda.resx">
+      <DependentUpon>Agenda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ContasPagar.resx">
+      <DependentUpon>ContasPagar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ContasReceber.resx">
+      <DependentUpon>ContasReceber.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Contatos.resx">
       <DependentUpon>Contatos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControleContas.resx">
+      <DependentUpon>ControleContas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>

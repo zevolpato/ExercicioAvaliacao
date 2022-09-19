@@ -10,21 +10,11 @@ using System.Windows.Forms;
 
 namespace ExercicioAvaliacao
 {
-    public partial class Agenda : Form
+    public partial class ContasReceber : Form
     {
-        public Agenda()
+        public ContasReceber()
         {
             InitializeComponent();
-        }
-
-        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnInserir_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
