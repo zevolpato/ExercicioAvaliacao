@@ -38,22 +38,22 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.txtIdContato = new System.Windows.Forms.TextBox();
+            this.txtNome = new System.Windows.Forms.TextBox();
+            this.txtLogradouro = new System.Windows.Forms.TextBox();
+            this.txtCidade = new System.Windows.Forms.TextBox();
+            this.txtBairro = new System.Windows.Forms.TextBox();
+            this.txtCEP = new System.Windows.Forms.TextBox();
+            this.txtNumero = new System.Windows.Forms.TextBox();
+            this.cmbEstado = new System.Windows.Forms.ComboBox();
             this.btnInserir = new System.Windows.Forms.Button();
             this.btnAlterar = new System.Windows.Forms.Button();
             this.btnDeletar = new System.Windows.Forms.Button();
             this.dgwTelefones = new System.Windows.Forms.DataGridView();
             this.label10 = new System.Windows.Forms.Label();
-            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.txtEmail = new System.Windows.Forms.TextBox();
             this.dgwContatos = new System.Windows.Forms.DataGridView();
-            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.txtPesquisar = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label12 = new System.Windows.Forms.Label();
@@ -61,7 +61,7 @@
             this.label13 = new System.Windows.Forms.Label();
             this.txtCPF = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dtpDataNascimento = new System.Windows.Forms.DateTimePicker();
             this.label15 = new System.Windows.Forms.Label();
             this.rbMasculino = new System.Windows.Forms.RadioButton();
             this.rbFeminino = new System.Windows.Forms.RadioButton();
@@ -161,68 +161,68 @@
             this.label9.TabIndex = 9;
             this.label9.Text = "Número";
             // 
-            // textBox1
+            // txtIdContato
             // 
-            this.textBox1.Enabled = false;
-            this.textBox1.Location = new System.Drawing.Point(115, 28);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(46, 20);
-            this.textBox1.TabIndex = 10;
+            this.txtIdContato.Enabled = false;
+            this.txtIdContato.Location = new System.Drawing.Point(115, 28);
+            this.txtIdContato.Name = "txtIdContato";
+            this.txtIdContato.Size = new System.Drawing.Size(46, 20);
+            this.txtIdContato.TabIndex = 10;
             // 
-            // textBox2
+            // txtNome
             // 
-            this.textBox2.Location = new System.Drawing.Point(115, 59);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(636, 20);
-            this.textBox2.TabIndex = 10;
+            this.txtNome.Location = new System.Drawing.Point(115, 59);
+            this.txtNome.Name = "txtNome";
+            this.txtNome.Size = new System.Drawing.Size(636, 20);
+            this.txtNome.TabIndex = 10;
             // 
-            // textBox3
+            // txtLogradouro
             // 
-            this.textBox3.Enabled = false;
-            this.textBox3.Location = new System.Drawing.Point(115, 188);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(355, 20);
-            this.textBox3.TabIndex = 10;
+            this.txtLogradouro.Enabled = false;
+            this.txtLogradouro.Location = new System.Drawing.Point(115, 188);
+            this.txtLogradouro.Name = "txtLogradouro";
+            this.txtLogradouro.Size = new System.Drawing.Size(355, 20);
+            this.txtLogradouro.TabIndex = 10;
             // 
-            // textBox4
+            // txtCidade
             // 
-            this.textBox4.Enabled = false;
-            this.textBox4.Location = new System.Drawing.Point(115, 223);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(168, 20);
-            this.textBox4.TabIndex = 10;
+            this.txtCidade.Enabled = false;
+            this.txtCidade.Location = new System.Drawing.Point(115, 223);
+            this.txtCidade.Name = "txtCidade";
+            this.txtCidade.Size = new System.Drawing.Size(168, 20);
+            this.txtCidade.TabIndex = 10;
             // 
-            // textBox5
+            // txtBairro
             // 
-            this.textBox5.Enabled = false;
-            this.textBox5.Location = new System.Drawing.Point(337, 223);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(133, 20);
-            this.textBox5.TabIndex = 10;
+            this.txtBairro.Enabled = false;
+            this.txtBairro.Location = new System.Drawing.Point(337, 223);
+            this.txtBairro.Name = "txtBairro";
+            this.txtBairro.Size = new System.Drawing.Size(133, 20);
+            this.txtBairro.TabIndex = 10;
             // 
-            // textBox6
+            // txtCEP
             // 
-            this.textBox6.Location = new System.Drawing.Point(223, 258);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(120, 20);
-            this.textBox6.TabIndex = 10;
+            this.txtCEP.Location = new System.Drawing.Point(223, 258);
+            this.txtCEP.Name = "txtCEP";
+            this.txtCEP.Size = new System.Drawing.Size(120, 20);
+            this.txtCEP.TabIndex = 10;
             // 
-            // textBox7
+            // txtNumero
             // 
-            this.textBox7.Enabled = false;
-            this.textBox7.Location = new System.Drawing.Point(399, 258);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(71, 20);
-            this.textBox7.TabIndex = 10;
+            this.txtNumero.Enabled = false;
+            this.txtNumero.Location = new System.Drawing.Point(399, 258);
+            this.txtNumero.Name = "txtNumero";
+            this.txtNumero.Size = new System.Drawing.Size(71, 20);
+            this.txtNumero.TabIndex = 10;
             // 
-            // comboBox1
+            // cmbEstado
             // 
-            this.comboBox1.Enabled = false;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(115, 257);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(54, 21);
-            this.comboBox1.TabIndex = 11;
+            this.cmbEstado.Enabled = false;
+            this.cmbEstado.FormattingEnabled = true;
+            this.cmbEstado.Location = new System.Drawing.Point(115, 257);
+            this.cmbEstado.Name = "cmbEstado";
+            this.cmbEstado.Size = new System.Drawing.Size(54, 21);
+            this.cmbEstado.TabIndex = 11;
             // 
             // btnInserir
             // 
@@ -269,12 +269,12 @@
             this.label10.TabIndex = 7;
             this.label10.Text = "Email";
             // 
-            // textBox8
+            // txtEmail
             // 
-            this.textBox8.Location = new System.Drawing.Point(115, 88);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(355, 20);
-            this.textBox8.TabIndex = 10;
+            this.txtEmail.Location = new System.Drawing.Point(115, 88);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(355, 20);
+            this.txtEmail.TabIndex = 10;
             // 
             // dgwContatos
             // 
@@ -284,12 +284,12 @@
             this.dgwContatos.Size = new System.Drawing.Size(690, 135);
             this.dgwContatos.TabIndex = 13;
             // 
-            // textBox9
+            // txtPesquisar
             // 
-            this.textBox9.Location = new System.Drawing.Point(462, 31);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(245, 20);
-            this.textBox9.TabIndex = 14;
+            this.txtPesquisar.Location = new System.Drawing.Point(462, 31);
+            this.txtPesquisar.Name = "txtPesquisar";
+            this.txtPesquisar.Size = new System.Drawing.Size(245, 20);
+            this.txtPesquisar.TabIndex = 14;
             // 
             // label11
             // 
@@ -303,7 +303,7 @@
             // panel1
             // 
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Controls.Add(this.textBox9);
+            this.panel1.Controls.Add(this.txtPesquisar);
             this.panel1.Controls.Add(this.dgwContatos);
             this.panel1.Controls.Add(this.label11);
             this.panel1.Controls.Add(this.btnDeletar);
@@ -356,12 +356,12 @@
             this.label14.TabIndex = 7;
             this.label14.Text = "Data Nascimento";
             // 
-            // dateTimePicker1
+            // dtpDataNascimento
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(115, 149);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(355, 20);
-            this.dateTimePicker1.TabIndex = 16;
+            this.dtpDataNascimento.Location = new System.Drawing.Point(115, 149);
+            this.dtpDataNascimento.Name = "dtpDataNascimento";
+            this.dtpDataNascimento.Size = new System.Drawing.Size(355, 20);
+            this.dtpDataNascimento.TabIndex = 16;
             // 
             // label15
             // 
@@ -402,20 +402,20 @@
             this.Controls.Add(this.rbFeminino);
             this.Controls.Add(this.rbMasculino);
             this.Controls.Add(this.label15);
-            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.dtpDataNascimento);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.dgwTelefones);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.cmbEstado);
             this.Controls.Add(this.txtComplemento);
             this.Controls.Add(this.txtCPF);
-            this.Controls.Add(this.textBox8);
-            this.Controls.Add(this.textBox7);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtEmail);
+            this.Controls.Add(this.txtNumero);
+            this.Controls.Add(this.txtCEP);
+            this.Controls.Add(this.txtBairro);
+            this.Controls.Add(this.txtCidade);
+            this.Controls.Add(this.txtLogradouro);
+            this.Controls.Add(this.txtNome);
+            this.Controls.Add(this.txtIdContato);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label12);
@@ -453,22 +453,22 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.TextBox txtIdContato;
+        private System.Windows.Forms.TextBox txtNome;
+        private System.Windows.Forms.TextBox txtLogradouro;
+        private System.Windows.Forms.TextBox txtCidade;
+        private System.Windows.Forms.TextBox txtBairro;
+        private System.Windows.Forms.TextBox txtCEP;
+        private System.Windows.Forms.TextBox txtNumero;
+        private System.Windows.Forms.ComboBox cmbEstado;
         private System.Windows.Forms.Button btnInserir;
         private System.Windows.Forms.Button btnAlterar;
         private System.Windows.Forms.Button btnDeletar;
         private System.Windows.Forms.DataGridView dgwTelefones;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.DataGridView dgwContatos;
-        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.TextBox txtPesquisar;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label12;
@@ -476,7 +476,7 @@
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.TextBox txtCPF;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker dtpDataNascimento;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.RadioButton rbMasculino;
         private System.Windows.Forms.RadioButton rbFeminino;

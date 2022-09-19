@@ -32,13 +32,13 @@
             this.label4 = new System.Windows.Forms.Label();
             this.txtDescricao = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btnPeesquisar = new System.Windows.Forms.Button();
+            this.btnPesquisar = new System.Windows.Forms.Button();
             this.dgwContasReceber = new System.Windows.Forms.DataGridView();
             this.btnDeletar = new System.Windows.Forms.Button();
             this.btnAlterar = new System.Windows.Forms.Button();
             this.btnInserir = new System.Windows.Forms.Button();
-            this.dtp = new System.Windows.Forms.DateTimePicker();
-            this.txtId = new System.Windows.Forms.TextBox();
+            this.dtpDataVencimento = new System.Windows.Forms.DateTimePicker();
+            this.txtIdContasReceber = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -75,7 +75,7 @@
             // panel1
             // 
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Controls.Add(this.btnPeesquisar);
+            this.panel1.Controls.Add(this.btnPesquisar);
             this.panel1.Controls.Add(this.dgwContasReceber);
             this.panel1.Controls.Add(this.btnDeletar);
             this.panel1.Controls.Add(this.btnAlterar);
@@ -85,14 +85,14 @@
             this.panel1.Size = new System.Drawing.Size(728, 225);
             this.panel1.TabIndex = 31;
             // 
-            // btnPeesquisar
+            // btnPesquisar
             // 
-            this.btnPeesquisar.Location = new System.Drawing.Point(469, 22);
-            this.btnPeesquisar.Name = "btnPeesquisar";
-            this.btnPeesquisar.Size = new System.Drawing.Size(240, 28);
-            this.btnPeesquisar.TabIndex = 14;
-            this.btnPeesquisar.Text = "PESQUISAR";
-            this.btnPeesquisar.UseVisualStyleBackColor = true;
+            this.btnPesquisar.Location = new System.Drawing.Point(469, 22);
+            this.btnPesquisar.Name = "btnPesquisar";
+            this.btnPesquisar.Size = new System.Drawing.Size(240, 28);
+            this.btnPesquisar.TabIndex = 14;
+            this.btnPesquisar.Text = "PESQUISAR";
+            this.btnPesquisar.UseVisualStyleBackColor = true;
             // 
             // dgwContasReceber
             // 
@@ -129,20 +129,20 @@
             this.btnInserir.Text = "INSERIR";
             this.btnInserir.UseVisualStyleBackColor = true;
             // 
-            // dtp
+            // dtpDataVencimento
             // 
-            this.dtp.Location = new System.Drawing.Point(500, 41);
-            this.dtp.Name = "dtp";
-            this.dtp.Size = new System.Drawing.Size(278, 20);
-            this.dtp.TabIndex = 30;
+            this.dtpDataVencimento.Location = new System.Drawing.Point(500, 41);
+            this.dtpDataVencimento.Name = "dtpDataVencimento";
+            this.dtpDataVencimento.Size = new System.Drawing.Size(278, 20);
+            this.dtpDataVencimento.TabIndex = 30;
             // 
-            // txtId
+            // txtIdContasReceber
             // 
-            this.txtId.Enabled = false;
-            this.txtId.Location = new System.Drawing.Point(127, 40);
-            this.txtId.Name = "txtId";
-            this.txtId.Size = new System.Drawing.Size(56, 20);
-            this.txtId.TabIndex = 29;
+            this.txtIdContasReceber.Enabled = false;
+            this.txtIdContasReceber.Location = new System.Drawing.Point(127, 40);
+            this.txtIdContasReceber.Name = "txtIdContasReceber";
+            this.txtIdContasReceber.Size = new System.Drawing.Size(56, 20);
+            this.txtIdContasReceber.TabIndex = 29;
             // 
             // label3
             // 
@@ -209,8 +209,8 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.txtDescricao);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.dtp);
-            this.Controls.Add(this.txtId);
+            this.Controls.Add(this.dtpDataVencimento);
+            this.Controls.Add(this.txtIdContasReceber);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -233,12 +233,12 @@
         private System.Windows.Forms.Button btnDeletar;
         private System.Windows.Forms.Button btnAlterar;
         private System.Windows.Forms.Button btnInserir;
-        private System.Windows.Forms.DateTimePicker dtp;
-        private System.Windows.Forms.TextBox txtId;
+        private System.Windows.Forms.DateTimePicker dtpDataVencimento;
+        private System.Windows.Forms.TextBox txtIdContasReceber;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button btnPeesquisar;
+        private System.Windows.Forms.Button btnPesquisar;
         private System.Windows.Forms.CheckBox cbRecebido;
         private System.Windows.Forms.TextBox txtNome;
         private System.Windows.Forms.Label label5;
