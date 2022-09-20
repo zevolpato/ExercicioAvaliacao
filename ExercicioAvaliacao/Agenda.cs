@@ -25,6 +25,20 @@ namespace ExercicioAvaliacao
         private void btnInserir_Click(object sender, EventArgs e)
         {
 
+            pegaData();
+
+           
+
+        }
+
+        void pegaData()
+        {
+            DateTime data = dtpData.Value;
+            string dataCurta = data.ToShortDateString();
+            string[] vetData = dataCurta.Split('/');
+            string dataNova = vetData[2] + "-" + vetData[1] + "-" + vetData[0];    
+            
+            MessageBox.Show(dataNova);
         }
     }
 }

@@ -90,6 +90,7 @@
             this.dtpData.Name = "dtpData";
             this.dtpData.Size = new System.Drawing.Size(262, 20);
             this.dtpData.TabIndex = 4;
+            this.dtpData.Value = new System.DateTime(2022, 9, 22, 0, 0, 0, 0);
             this.dtpData.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
             // 
             // rtbDescricao
