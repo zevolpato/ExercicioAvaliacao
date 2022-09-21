@@ -23,6 +23,7 @@ CREATE TABLE IF NOT EXISTS `controle`.`Contas` (
   `descricao` VARCHAR(50) NOT NULL,
   `valor` DOUBLE NOT NULL,
   `dataVencimento` DATE NOT NULL,
+  `dataConsolidacao` DATE NULL,
   `pago_recebido` TINYINT NULL,
   `tipo` TINYINT NOT NULL,
   PRIMARY KEY (`idContasPagar`))
