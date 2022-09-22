@@ -18,14 +18,14 @@ namespace ExercicioAvaliacao
             InitializeComponent();
 
             mostrar();
-           
+                      
             btnDeletar.Visible = false;
             btnAlterar.Visible = false;
             
 
         }
         string continua = "yes";
-        string dataNova;
+        
 
         private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
         {
@@ -45,10 +45,10 @@ namespace ExercicioAvaliacao
                 {
                     using (MySqlConnection cnn = new MySqlConnection())
                     {
-                        cnn.ConnectionString = "server=localhost;database=controle;uid=root;pwd=;port=3306";
+                        cnn.ConnectionString = "server=localhost;database=controle;uid=root;pwd=;port=3306;Convert Zero DateTime = true";
                         cnn.Open();
                         MessageBox.Show("Inserido com sucesso!");
-                        string sql = "insert into agenda (titulo, hora, data,descricao) values ('"+ txtTitulo.Text + "','" + cmbHora.Text + "','" + dataNova + "','" + rtbDescricao.Text + "')";
+                        string sql = "insert into agenda (titulo, hora, data,descricao) values ('"+ txtTitulo.Text + "','" + cmbHora.Text + "','" + Globals.DataNova + "','" + rtbDescricao.Text + "')";
                         MySqlCommand cmd = new MySqlCommand(sql, cnn);
                         cmd.ExecuteNonQuery();
 
@@ -95,7 +95,7 @@ namespace ExercicioAvaliacao
                 {
                     using (MySqlConnection cnn = new MySqlConnection())
                     {
-                        cnn.ConnectionString = "server=localhost;database=controle;uid=root;pwd=;port=3306";
+                        cnn.ConnectionString = "server=localhost;database=controle;uid=root;pwd=;port=3306;Convert Zero DateTime = true";
                         cnn.Open();
                         string sql = "Delete from agenda where idAgenda = '" + txtIdAgenda.Text + "'";
                         MySqlCommand cmd = new MySqlCommand(sql, cnn);
@@ -120,13 +120,15 @@ namespace ExercicioAvaliacao
 
         private void btnAlterar_Click(object sender, EventArgs e)
         {
+            pegaData();
+            
             try
             {
                 using (MySqlConnection cnn = new MySqlConnection())
                 {
-                    cnn.ConnectionString = "server=localhost;database=controle;uid=root;pwd=;port=3306";
+                    cnn.ConnectionString = "server=localhost;database=controle;uid=root;pwd=;port=3306;Convert Zero DateTime = true";
                     cnn.Open();
-                    string sql = "Update agenda set nome='" + txtTitulo.Text + "', descricao='" + rtbDescricao.Text + "' where idAgenda='" + txtIdAgenda.Text + "'";
+                    string sql = "Update agenda set titulo='" + txtTitulo.Text + "', hora='" + cmbHora.Text + "',data='" + Globals.DataNova + "', descricao='" + rtbDescricao.Text + "' where idAgenda='" + txtIdAgenda.Text + "'";
                     MySqlCommand cmd = new MySqlCommand(sql, cnn);
                     cmd.ExecuteNonQuery();
                     MessageBox.Show("Atualizado com sucesso!");
@@ -141,23 +143,26 @@ namespace ExercicioAvaliacao
 
         }
 
+        
         void pegaData()
         {
-            DateTime data = dtpData.Value;
-            string dataCurta = data.ToShortDateString();
+            Globals.Data = dtpData.Value;
+            string dataCurta = Globals.Data.ToShortDateString();
             string[] vetData = dataCurta.Split('/');
-           dataNova = vetData[2] + "-" + vetData[1] + "-" + vetData[0];
-           
+           Globals.DataNova = vetData[2] + "-" + vetData[1] + "-" + vetData[0];
+
         }
 
+        
 
         void mostrar()
         {
+            
             try
             {
                 using (MySqlConnection cnn = new MySqlConnection())
                 {
-                    cnn.ConnectionString = "server=localhost;database=controle;uid=root;pwd=;port=3306";
+                    cnn.ConnectionString = "server=localhost;database=controle;uid=root;pwd=;port=3306;Convert Zero DateTime = true";
                     cnn.Open();
                     string sql = "Select * from agenda";
                     DataTable table = new DataTable();
@@ -212,7 +217,8 @@ namespace ExercicioAvaliacao
                 txtIdAgenda.Text = dgwAgenda.CurrentRow.Cells[0].Value.ToString();
                 txtTitulo.Text = dgwAgenda.CurrentRow.Cells[1].Value.ToString();
                 cmbHora.Text = dgwAgenda.CurrentRow.Cells[2].Value.ToString();
-                dtpData.Text = dgwAgenda.CurrentRow.Cells[3].Value.ToString();
+                dtpData.Value = Convert.ToDateTime(dgwAgenda.CurrentRow.Cells[3].Value.ToString());
+               
                 rtbDescricao.Text = dgwAgenda.CurrentRow.Cells[4].Value.ToString();
 
               
