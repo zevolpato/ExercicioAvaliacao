@@ -126,7 +126,8 @@ namespace ExercicioAvaliacao
             {
                 using (MySqlConnection cnn = new MySqlConnection())
                 {
-                    cnn.ConnectionString = "server=localhost;database=controle;uid=root;pwd=;port=3306;Convert Zero DateTime = true";
+                    cnn.ConnectionString = Globals.conexao;
+                    //cnn.ConnectionString = "server=localhost;database=controle;uid=root;pwd=;port=3306;Convert Zero DateTime = true";
                     cnn.Open();
                     string sql = "Update agenda set titulo='" + txtTitulo.Text + "', hora='" + cmbHora.Text + "',data='" + Globals.DataNova + "', descricao='" + rtbDescricao.Text + "' where idAgenda='" + txtIdAgenda.Text + "'";
                     MySqlCommand cmd = new MySqlCommand(sql, cnn);
@@ -138,6 +139,7 @@ namespace ExercicioAvaliacao
             catch (Exception ex)
             {
                 MessageBox.Show(ex.ToString());
+               
             }
             mostrar();
 
@@ -229,6 +231,32 @@ namespace ExercicioAvaliacao
                 btnInserir.Text = "Novo";
 
 
+            }
+        }
+
+        private void txtPesquisar_TextChanged(object sender, EventArgs e)
+        {
+            try
+            {
+
+                using (MySqlConnection cnn = new MySqlConnection())
+                {
+                    cnn.ConnectionString = "server=localhost;database=controle;uid=root;pwd=;port=3306;Convert Zero DateTime = true";
+                    cnn.Open();
+                    string sql;
+                    sql = "Select * from agenda where titulo Like'" + txtPesquisar.Text + "%'";
+                    MySqlCommand cmd = new MySqlCommand(sql, cnn);
+                    cmd.ExecuteNonQuery();
+                    DataTable table = new DataTable();
+                    MySqlDataAdapter adpter = new MySqlDataAdapter(sql, cnn);
+                    adpter.Fill(table);
+                    dgwAgenda.DataSource = table;
+                    dgwAgenda.AutoGenerateColumns = false;
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
             }
         }
     }

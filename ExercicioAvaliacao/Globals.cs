@@ -16,15 +16,9 @@ namespace ExercicioAvaliacao
         public static DateTime Data { get; set; }
         public static string DataNova { get; set; }
 
-        public static int rst;
+        public static string conexao = "server=localhost;database=controle;uid=root;pwd=;port=3306;Convert Zero DateTime = true";
 
-        public static int Rst { get; set; }
-
-        public static  int  resultado (int n1, int n2)
-        {
-            rst= n1 + n2;
-            return rst;
-        }
+      
 
 
     }

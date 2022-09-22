@@ -127,6 +127,7 @@
             this.txtPesquisar.Name = "txtPesquisar";
             this.txtPesquisar.Size = new System.Drawing.Size(245, 20);
             this.txtPesquisar.TabIndex = 14;
+            this.txtPesquisar.TextChanged += new System.EventHandler(this.txtPesquisar_TextChanged);
             // 
             // dgwAgenda
             // 
