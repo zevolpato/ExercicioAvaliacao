@@ -34,7 +34,7 @@
             this.btnDeletar = new System.Windows.Forms.Button();
             this.btnAlterar = new System.Windows.Forms.Button();
             this.btnInserir = new System.Windows.Forms.Button();
-            this.dtpdataVencimento = new System.Windows.Forms.DateTimePicker();
+            this.dtpDataVencimento = new System.Windows.Forms.DateTimePicker();
             this.txtIdContasPagar = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -42,7 +42,6 @@
             this.txtDescricao = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.txtValor = new System.Windows.Forms.TextBox();
-            this.cbPago = new System.Windows.Forms.CheckBox();
             this.label5 = new System.Windows.Forms.Label();
             this.txtNome = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
@@ -69,6 +68,7 @@
             this.dgwContasPagar.Name = "dgwContasPagar";
             this.dgwContasPagar.Size = new System.Drawing.Size(690, 135);
             this.dgwContasPagar.TabIndex = 13;
+            this.dgwContasPagar.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgwContasPagar_CellDoubleClick);
             // 
             // btnPesquisar
             // 
@@ -87,6 +87,7 @@
             this.btnDeletar.TabIndex = 0;
             this.btnDeletar.Text = "DELETAR";
             this.btnDeletar.UseVisualStyleBackColor = true;
+            this.btnDeletar.Click += new System.EventHandler(this.btnDeletar_Click);
             // 
             // btnAlterar
             // 
@@ -96,6 +97,7 @@
             this.btnAlterar.TabIndex = 0;
             this.btnAlterar.Text = "ALTERAR";
             this.btnAlterar.UseVisualStyleBackColor = true;
+            this.btnAlterar.Click += new System.EventHandler(this.btnAlterar_Click);
             // 
             // btnInserir
             // 
@@ -107,12 +109,12 @@
             this.btnInserir.UseVisualStyleBackColor = true;
             this.btnInserir.Click += new System.EventHandler(this.btnInserir_Click);
             // 
-            // dtpdataVencimento
+            // dtpDataVencimento
             // 
-            this.dtpdataVencimento.Location = new System.Drawing.Point(504, 42);
-            this.dtpdataVencimento.Name = "dtpdataVencimento";
-            this.dtpdataVencimento.Size = new System.Drawing.Size(278, 20);
-            this.dtpdataVencimento.TabIndex = 21;
+            this.dtpDataVencimento.Location = new System.Drawing.Point(504, 42);
+            this.dtpDataVencimento.Name = "dtpDataVencimento";
+            this.dtpDataVencimento.Size = new System.Drawing.Size(278, 20);
+            this.dtpDataVencimento.TabIndex = 21;
             // 
             // txtIdContasPagar
             // 
@@ -139,7 +141,6 @@
             this.label2.Size = new System.Drawing.Size(89, 13);
             this.label2.TabIndex = 18;
             this.label2.Text = "Data Vencimento";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label1
             // 
@@ -173,17 +174,6 @@
             this.txtValor.Size = new System.Drawing.Size(156, 20);
             this.txtValor.TabIndex = 25;
             // 
-            // cbPago
-            // 
-            this.cbPago.AutoSize = true;
-            this.cbPago.Location = new System.Drawing.Point(374, 154);
-            this.cbPago.Name = "cbPago";
-            this.cbPago.Size = new System.Drawing.Size(50, 17);
-            this.cbPago.TabIndex = 26;
-            this.cbPago.Text = "pago";
-            this.cbPago.UseVisualStyleBackColor = true;
-            this.cbPago.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
-            // 
             // label5
             // 
             this.label5.AutoSize = true;
@@ -207,12 +197,11 @@
             this.ClientSize = new System.Drawing.Size(873, 485);
             this.Controls.Add(this.txtNome);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.cbPago);
             this.Controls.Add(this.txtValor);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.txtDescricao);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.dtpdataVencimento);
+            this.Controls.Add(this.dtpDataVencimento);
             this.Controls.Add(this.txtIdContasPagar);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -233,7 +222,7 @@
         private System.Windows.Forms.Button btnDeletar;
         private System.Windows.Forms.Button btnAlterar;
         private System.Windows.Forms.Button btnInserir;
-        private System.Windows.Forms.DateTimePicker dtpdataVencimento;
+        private System.Windows.Forms.DateTimePicker dtpDataVencimento;
         private System.Windows.Forms.TextBox txtIdContasPagar;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
@@ -241,7 +230,6 @@
         private System.Windows.Forms.TextBox txtDescricao;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtValor;
-        private System.Windows.Forms.CheckBox cbPago;
         private System.Windows.Forms.Button btnPesquisar;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txtNome;

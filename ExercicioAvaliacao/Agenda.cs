@@ -27,11 +27,7 @@ namespace ExercicioAvaliacao
         string continua = "yes";
         
 
-        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
-        {
-
-        }
-
+        // IINSERIR
         private void btnInserir_Click(object sender, EventArgs e)
         {
 
@@ -66,24 +62,9 @@ namespace ExercicioAvaliacao
 
             mostrar();
             limpar();
-
-
-
-
-          
-
-
-
         }
 
-
-
-
-
-       
-
-
-        // 
+        //DELETAR 
      
 
         private void btnDeletar_Click(object sender, EventArgs e)
@@ -259,5 +240,7 @@ namespace ExercicioAvaliacao
                 MessageBox.Show(ex.ToString());
             }
         }
+
+       
     }
 }

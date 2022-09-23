@@ -91,7 +91,6 @@
             this.dtpData.Size = new System.Drawing.Size(262, 20);
             this.dtpData.TabIndex = 4;
             this.dtpData.Value = new System.DateTime(2022, 9, 22, 0, 0, 0, 0);
-            this.dtpData.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
             // 
             // rtbDescricao
             // 
@@ -115,7 +114,20 @@
             this.cmbHora.FormattingEnabled = true;
             this.cmbHora.Items.AddRange(new object[] {
             "8:00",
-            "9:00"});
+            "9:00",
+            "10:00",
+            "11:00",
+            "12:00",
+            "13:00",
+            "14:00",
+            "15:00",
+            "16:00",
+            "17:00",
+            "18:00",
+            "19:00",
+            "20:00",
+            "21:00",
+            "22:00"});
             this.cmbHora.Location = new System.Drawing.Point(117, 87);
             this.cmbHora.Name = "cmbHora";
             this.cmbHora.Size = new System.Drawing.Size(112, 21);
